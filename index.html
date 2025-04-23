@@ -1,168 +1,1202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Interactive Website Proposal</title>
-  <style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VWBreakers - Premium Used Volkswagen Parts Specialists</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="UK's leading Volkswagen parts specialists. Quality used VW parts with 3-month warranty. Next day delivery available. Sell your VW for top prices.">
+    <meta name="keywords" content="Volkswagen parts, VW spares, used car parts, VW breakers, VW salvage">
+    <meta property="og:title" content="VWBreakers - Premium Used Volkswagen Parts">
+    <meta property="og:description" content="Quality used VW parts with warranty. Next day delivery across UK.">
+    <meta property="og:image" content="https://www.vwbreakers.co.uk/images/social-preview.jpg">
+    <meta property="og:url" content="https://www.vwbreakers.co.uk/">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="stylec81e.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Schema Markup -->
+    <script type="text/javascript" src="js/adapt.load.js"></script>
+		<script type="text/javascript" src="js/adapt.min.js"></script>
+		<script type="text/javascript" src="js/jquerya5b0.js?121321"></script>
+		<script type="text/javascript" src="js/jquery.cycle.all.latest.js"></script>
+		<script type="text/javascript" src="js/jquery.load3ac3.js?update"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoPartsStore",
+      "name": "VWBreakers Ltd",
+      "image": "https://www.vwbreakers.co.uk/images/logo.png",
+      "url": "https://www.vwbreakers.co.uk/",
+      "telephone": "+441473487878",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Unit 6, Farthing Road Industrial Estate",
+        "addressLocality": "Ipswich",
+        "postalCode": "IP1 5AP",
+        "addressCountry": "UK"
+      },
+      "openingHours": "Mo-Fr 08:00-17:30, Sa 08:00-13:00",
+      "priceRange": "£",
+      "currenciesAccepted": "GBP"
+    }
+    </script>
+    <style type="text/css">
+        /* ==========================================================================
+   Base Styles & Variables
+   ========================================================================== */
+:root {
+    /* Color Scheme - VW Blue Theme */
+    --primary-color: #003366;       /* VW Dark Blue */
+    --secondary-color: #0066cc;     /* VW Light Blue */
+    --accent-color: #ff6600;        /* Orange for CTAs */
+    --dark-color: #1a1a1a;
+    --light-color: #f8f9fa;
+    --gray-color: #6c757d;
+    --light-gray: #e9ecef;
+    --white: #ffffff;
+    --black: #000000;
+    
+    /* Typography */
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Roboto', sans-serif;
+    --base-font-size: 1rem;
+    --h1-size: 2.5rem;
+    --h2-size: 2rem;
+    --h3-size: 1.75rem;
+    --h4-size: 1.5rem;
+    
+    /* Spacing */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+    
+    /* Borders */
+    --border-radius: 4px;
+    --border-radius-lg: 8px;
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.15);
+    --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.2);
+    
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+}
+
+/* ==========================================================================
+   Base Elements
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-secondary);
+    font-size: var(--base-font-size);
+    line-height: 1.6;
+    color: var(--dark-color);
+    background-color: var(--white);
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-primary);
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: var(--space-sm);
+    color: var(--primary-color);
+}
+
+h1 { font-size: var(--h1-size); }
+h2 { font-size: var(--h2-size); }
+h3 { font-size: var(--h3-size); }
+h4 { font-size: var(--h4-size); }
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+p {
+    margin-bottom: var(--space-sm);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul, ol {
+    margin-bottom: var(--space-sm);
+    padding-left: var(--space-md);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+/* ==========================================================================
+   Utility Classes
+   ========================================================================== */
+.text-center { text-align: center; }
+.text-primary { color: var(--primary-color); }
+.text-secondary { color: var(--secondary-color); }
+.text-accent { color: var(--accent-color); }
+.text-white { color: var(--white); }
+
+.bg-primary { background-color: var(--primary-color); }
+.bg-secondary { background-color: var(--secondary-color); }
+.bg-light { background-color: var(--light-color); }
+.bg-dark { background-color: var(--dark-color); }
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--border-radius);
+    font-family: var(--font-primary);
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    border: 2px solid transparent;
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: darken(var(--accent-color), 10%);
+    transform: translateY(-2px);
+    color: var(--accent-color);
+    box-shadow: var(--shadow-sm);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: var(--space-xl);
+}
+
+.section-header h2 {
+    position: relative;
+    display: inline-block;
+    padding-bottom: var(--space-sm);
+}
+
+.section-header h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--accent-color);
+}
+
+.section-header p {
+    color: var(--gray-color);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ==========================================================================
+   Header & Navigation
+   ========================================================================== */
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--white);
+    box-shadow: var(--shadow-sm);
+    z-index: 1000;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-sm) 0;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+.header-contact {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.phone-numbers {
+    display: flex;
+    flex-direction: column;
+}
+
+.phone-link, .whatsapp-link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    font-weight: 500;
+    color: var(--dark-color);
+}
+
+.phone-link:hover, .whatsapp-link:hover {
+    color: var(--secondary-color);
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-form {
+    display: flex;
+}
+
+.search-form input {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--light-gray);
+    border-radius: var(--border-radius);
+    min-width: 250px;
+}
+
+.search-form button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: none;
+    border: none;
+    padding: 0 var(--space-sm);
+    cursor: pointer;
+    color: var(--gray-color);
+}
+
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: var(--space-sm);
+}
+
+.mobile-menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: var(--primary-color);
+    margin: 5px 0;
+    transition: all var(--transition-normal);
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    border-top: 1px solid var(--light-gray);
+}
+
+.main-nav li {
+    position: relative;
+}
+
+.main-nav a {
+    display: block;
+    padding: var(--space-md) var(--space-lg);
+    font-family: var(--font-primary);
+    font-weight: 500;
+    color: var(--dark-color);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.main-nav a:hover, .main-nav a.active {
+    color: var(--secondary-color);
+}
+
+.main-nav a.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--accent-color);
+}
+
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+.hero-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://www.vwbreakers.co.uk/images/slide4.png') no-repeat center center;
+    background-size: cover;
+    height: 700px;
+    color: var(--white);
+    padding: 180px 0 100px;
+    margin-top: 80px; /* Account for fixed header */
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    color: var(--white);
+    margin-bottom: var(--space-md);
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content .subtitle {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-lg);
+    opacity: 0.9;
+}
+
+/* ==========================================================================
+   Part Finder Section
+   ========================================================================== */
+.part-finder-section {
+    padding: var(--space-xl) 0;
+    background-color: var(--light-color);
+}
+
+.part-finder-form {
+    background-color: var(--white);
+    padding: var(--space-lg);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+    margin-bottom: var(--space-md);
+}
+
+.form-group {
+    flex: 1;
+    min-width: 200px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: var(--space-xs);
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--light-gray);
+    border-radius: var(--border-radius);
+    font-family: var(--font-secondary);
+    transition: border-color var(--transition-fast);
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+}
+
+.form-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    color: var(--gray-color);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-md);
+    margin-top: var(--space-lg);
+}
+
+/* ==========================================================================
+   Features Section
+   ========================================================================== */
+.features-section {
+    padding: var(--space-xl) 0;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-lg);
+}
+
+.feature-card {
+    text-align: center;
+    padding: var(--space-lg);
+    background-color: var(--white);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: var(--space-md);
+}
+
+.feature-card h3 {
+    margin-bottom: var(--space-sm);
+}
+
+/* ==========================================================================
+   Models Section
+   ========================================================================== */
+.models-section {
+    padding: var(--space-xl) 0;
+    background-color: var(--light-color);
+}
+
+.models-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-md);
+}
+
+.model-card {
+    position: relative;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+    height: 250px;
+}
+
+.model-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.model-card img {
+    width: 100%;
+    height: 100%;
+}
+
+.model-card h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: var(--space-sm);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: var(--white);
+    text-align: center;
+}
+
+/* ==========================================================================
+   About Section
+   ========================================================================== */
+.about-section {
+    padding: var(--space-xl) 0;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-xl);
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 300px;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    transition: transform var(--transition-normal);
+}
+
+.about-image:hover img {
+    transform: scale(1.05);
+}
+
+.about-cta {
+    margin-top: var(--space-lg);
+}
+
+/* ==========================================================================
+   CTA Section
+   ========================================================================== */
+.cta-section {
+    padding: var(--space-xl) 0;
+    background: linear-gradient(rgba(0, 51, 102, 0.9), rgba(0, 51, 102, 0.9)), url('images/cta-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: var(--white);
+    text-align: center;
+}
+
+.cta-content h2 {
+    color: var(--white);
+    margin-bottom: var(--space-md);
+}
+
+.cta-content p {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-lg);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.main-footer {
+    background-color: var(--dark-color);
+    color: var(--light-gray);
+}
+
+.footer-top {
+    padding: var(--space-xl) 0;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-xl);
+}
+
+.footer-col h3 {
+    color: var(--white);
+    margin-bottom: var(--space-md);
+    position: relative;
+    padding-bottom: var(--space-sm);
+}
+
+.footer-col h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--accent-color);
+}
+
+.address p {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-sm);
+}
+
+.opening-hours li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--space-xs);
+}
+
+.opening-hours span:first-child {
+    font-weight: 500;
+}
+
+.footer-links li {
+    margin-bottom: var(--space-xs);
+}
+
+.footer-links a {
+    color: var(--light-gray);
+    transition: color var(--transition-fast);
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
+    padding-left: 5px;
+}
+
+.social-links {
+    display: flex;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: var(--white);
+    transition: all var(--transition-fast);
+}
+
+.social-links a:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+.payment-methods {
+    display: flex;
+    gap: var(--space-sm);
+    margin-top: var(--space-md);
+}
+
+.footer-bottom {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: var(--space-md) 0;
+    font-size: 0.9rem;
+}
+
+.footer-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+}
+
+.legal-links {
+    display: flex;
+    gap: var(--space-md);
+}
+
+.legal-links a {
+    color: var(--light-gray);
+}
+
+.legal-links a:hover {
+    color: var(--accent-color);
+}
+
+.disclaimer {
+    margin-top: var(--space-md);
+    font-size: 0.8rem;
+    color: var(--gray-color);
+    text-align: center;
+}
+
+/* ==========================================================================
+   Icons (Using Font Awesome via CDN)
+   ========================================================================== */
+/* In production, you would include Font Awesome from CDN */
+.icon-phone::before { content: "\f095"; }
+.icon-whatsapp::before { content: "\f232"; }
+.icon-search::before { content: "\f002"; }
+.icon-location::before { content: "\f3c5"; }
+.icon-email::before { content: "\f0e0"; }
+.icon-facebook::before { content: "\f09a"; }
+.icon-twitter::before { content: "\f099"; }
+.icon-instagram::before { content: "\f16d"; }
+.icon-ebay::before { content: "\f324"; }
+.icon-warranty::before { content: "\f24e"; }
+.icon-delivery::before { content: "\f0d1"; }
+.icon-eco::before { content: "\f06c"; }
+.icon-payment::before { content: "\f09d"; }
+
+/* ==========================================================================
+   Mobile Responsiveness
+   ========================================================================== */
+@media (max-width: 992px) {
     :root {
-      --primary-color: #0f172a;
-      --accent-color: #ffb703;
-      --background-color: #f9f9f9;
-      --text-color: #1e293b;
-      --highlight-color: #ffeccb;
-      --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        --h1-size: 2rem;
+        --h2-size: 1.75rem;
+        --h3-size: 1.5rem;
     }
+    
+    .header-contact {
+        flex-direction: column;
+        gap: var(--space-sm);
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+}
 
-    * {
-      box-sizing: border-box;
+@media (max-width: 768px) {
+    .mobile-menu-toggle {
+        display: block;
     }
+    
+    .main-nav {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: var(--white);
+        transition: left var(--transition-normal);
+        overflow-y: auto;
+    }
+    
+    .main-nav.active {
+        left: 0;
+    }
+    
+    .main-nav ul {
+        flex-direction: column;
+        border-top: none;
+    }
+    
+    .main-nav li {
+        border-bottom: 1px solid var(--light-gray);
+    }
+    
+    .main-nav a {
+        padding: var(--space-md);
+    }
+    
+    .mobile-menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .mobile-menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .mobile-menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+    
+    .hero-banner {
+        padding: 150px 0 80px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: var(--space-sm);
+    }
+    
+    .form-divider {
+        margin: var(--space-sm) 0;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+        gap: var(--space-sm);
+    }
+    
+    .about-content {
+        flex-direction: column;
+    }
+}
 
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: var(--background-color);
-      color: var(--text-color);
+@media (max-width: 576px) {
+    :root {
+        --h1-size: 1.75rem;
+        --h2-size: 1.5rem;
     }
-
-    header {
-      background: linear-gradient(135deg, #0f172a, #1e293b);
-      color: white;
-      padding: 4rem 2rem;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
+    
+    .hero-content h1 {
+        font-size: 1.75rem;
     }
-
-    header::after {
-      content: '';
-      position: absolute;
-      width: 180px;
-      height: 180px;
-      background: var(--accent-color);
-      border-radius: 50%;
-      top: -40px;
-      right: -40px;
-      opacity: 0.1;
+    
+    .section-header {
+        margin-bottom: var(--space-lg);
     }
-
-    header h1 {
-      margin: 0;
-      font-size: 3.2rem;
-      animation: fadeInDown 1s ease-out;
+    
+    .footer-bottom-content {
+        flex-direction: column;
+        text-align: center;
     }
-
-    header p {
-      font-size: 1.25rem;
-      color: #cbd5e1;
-      margin-top: 1rem;
-      animation: fadeInUp 1.3s ease-out;
+    
+    .legal-links {
+        justify-content: center;
     }
-
-    .section {
-      max-width: 1100px;
-      margin: 3rem auto;
-      padding: 3rem;
-      background: white;
-      border-radius: 20px;
-      box-shadow: var(--box-shadow);
-      transition: transform 0.3s ease;
-    }
-
-    .section:hover {
-      transform: translateY(-6px);
-    }
-
-    .section h2 {
-      font-size: 2rem;
-      color: var(--primary-color);
-      border-left: 6px solid var(--accent-color);
-      padding-left: 1rem;
-      margin-bottom: 1.5rem;
-    }
-
-    ul {
-      padding-left: 1.5rem;
-      margin-top: 1rem;
-    }
-
-    ul li {
-      margin-bottom: 0.75rem;
-    }
-
-    .highlight {
-      background: var(--highlight-color);
-      border-left: 6px solid var(--accent-color);
-      padding: 1.5rem;
-      margin-top: 1.5rem;
-      border-radius: 12px;
-      font-size: 1.05rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: #e2e8f0;
-      font-size: 0.95rem;
-      color: #475569;
-      border-top: 1px solid #cbd5e1;
-    }
-
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
+}
+    </style>
 </head>
+
 <body>
+    <!-- Header with Navigation -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="VWBreakers" width="220" height="60">
+                    </a>
+                </div>
+                
+                <div class="header-contact">
+                    <div class="phone-numbers">
+                        <a href="tel:01473487878" class="phone-link">
+                            <i class="fa-solid fa-phone"></i> 01473 487878
+                        </a>
+                        <a href="https://wa.me/+447923232171" class="whatsapp-link">
+                            <i class="fa-brands fa-whatsapp"></i> 07923 232171
+                        </a>
+                    </div>
+                    
+                    <div class="search-container">
+                        <form action="/parts/" method="GET" class="search-form">
+                            <input type="search" name="keyword" placeholder="Search part number or keyword" required>
+                            <button type="submit" aria-label="Search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="parts/">Parts Store</a></li>
+                    <li><a href="request-parts/">Request Parts</a></li>
+                    <li><a href="sell-your-car/">Sell Your VW</a></li>
+                    <li><a href="feedback/">Feedback</a></li>
+                    <li><a href="contact-us/">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<header>
-  <h1>Interactive Website Proposal</h1>
-  <p>Immersive Digital Presence with Functional Innovation</p>
-</header>
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Quality Used Volkswagen Parts</h1>
+                <p class="subtitle">3-month warranty | Next day delivery | Environmentally approved</p>
+                <a href="#part-finder" class="btn btn-primary">Find Your Part</a>
+            </div>
+        </div>
+    </section>
 
-<div class="section">
-  <h2>Overview</h2>
-  <p>This proposal presents a plan to develop a high-end, visually striking informational website that includes a 3D interactive landing experience and a mini-site generation tool. Our approach blends visual creativity with technical precision to build a digital platform that both informs and impresses.</p>
-</div>
+    <!-- Quick Part Finder -->
+    <section id="part-finder" class="part-finder-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Quick Part Finder</h2>
+                <p>Find the exact part for your Volkswagen</p>
+            </div>
+            
+            <form class="part-finder-form" method="post" action="/parts/">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="reg">Enter your registration</label>
+                        <input type="text" id="reg" name="reg" placeholder="e.g. AB12 CDE">
+                    </div>
+                    <span class="form-divider">OR</span>
+                    <div class="form-group">
+                        <label for="model">Select your model</label>
+                        <select id="model" name="model">
+                            <option value="">Select Model</option>
+                            <option value="polo">Polo</option>
+                            <option value="golf">Golf</option>
+                            <option value="passat">Passat</option>
+                            <option value="tiguan">Tiguan</option>
+                            <option value="touareg">Touareg</option>
+                            <option value="id3">ID.3</option>
+                            <option value="id4">ID.4</option>
+                            <option value="transporter">Transporter</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="year">Year</label>
+                        <select id="year" name="year">
+                            <option value="">Select Year</option>
+                            <!-- Options would be dynamically generated -->
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <!-- More years... -->
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="engine">Engine</label>
+                        <select id="engine" name="engine">
+                            <option value="">Select Engine</option>
+                            <option value="1.0">1.0</option>
+                            <option value="1.2">1.2</option>
+                            <option value="1.5">1.5</option>
+                            <option value="2.0">2.0</option>
+                            <!-- More options... -->
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="keyword">Part Keyword</label>
+                        <input type="text" id="keyword" name="keyword" placeholder="e.g. wing mirror">
+                    </div>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Find Parts</button>
+                    <a href="#" class="btn btn-secondary">Clear Form</a>
+                </div>
+            </form>
+        </div>
+    </section>
 
-<div class="section">
-  <h2>Key Features</h2>
-  <ul>
-    <li><strong>Immersive 3D Landing:</strong> A fully interactive 3D visual element designed to make a bold first impression and engage users immediately.</li>
-    <li><strong>Structured Content Delivery:</strong> Clean and effective layout to communicate your message with clarity and authority.</li>
-    <li><strong>Custom Mini-Site Templates:</strong> Empower users or internal teams to create sleek, lightweight micro-sites, aligned with your brand identity.</li>
-    <li><strong>Seamless User Experience:</strong> Optimized for all devices and screen sizes to ensure usability and accessibility.</li>
-  </ul>
-</div>
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-shield-heart"></i>
+                    </div>
+                    <h3>3-Month Warranty</h3>
+                    <p>All parts come with our standard warranty for your peace of mind</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <h3>Next Day Delivery</h3>
+                    <p>Order before 2pm for next working day delivery</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h3>Eco-Friendly</h3>
+                    <p>Fully authorized by the Environment Agency</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-credit-card"></i>
+                    </div>
+                    <h3>Secure Payments</h3>
+                    <p>All major payment methods accepted</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="section">
-  <h2>Strategic Benefits</h2>
-  <div class="highlight">
-    <strong>First-Class Engagement:</strong> The 3D element enhances interactivity and sets your site apart from traditional designs.
-  </div>
-  <div class="highlight">
-    <strong>Brand Extension:</strong> The mini-site builder fosters broader visibility and consistent brand representation across multiple applications.
-  </div>
-  <div class="highlight">
-    <strong>Built for the Future:</strong> Lightweight, scalable codebase with no unnecessary frameworks—ensuring long-term reliability and easy expansion.
-  </div>
-</div>
+    <!-- Popular Models -->
+    <section class="models-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Popular Volkswagen Models</h2>
+                <p>Browse parts for these frequently requested models</p>
+            </div>
+            
+            <div class="models-grid">
+                <a href="/parts/vw-golf-breakers/" class="model-card">
+                    <img src="images/button-golf.png" alt="VW Golf Parts">
+                    <h3>Golf</h3>
+                </a>
+                
+                <a href="/parts/vw-polo-breakers/" class="model-card">
+                    <img src="images/button-polo.png" alt="VW Polo Parts">
+                    <h3>Polo</h3>
+                </a>
+                
+                <a href="/parts/vw-passat-breakers/" class="model-card">
+                    <img src="images/button-passat.png" alt="VW Passat Parts">
+                    <h3>Passat</h3>
+                </a>
+                
+                <a href="/parts/vw-tiguan-breakers/" class="model-card">
+                    <img src="images/button-tiguan.png" alt="VW Tiguan Parts">
+                    <h3>Tiguan</h3>
+                </a>
+                
+                <a href="/parts/vw-id3-breakers/" class="model-card">
+                    <img src="images/button-vwuniversal.png" alt="VW ID.3 Parts">
+                    <h3>ID.3</h3>
+                </a>
+                
+                <a href="/parts/vw-transporter-breakers/" class="model-card">
+                    <img src="images/button-vwup.png" alt="VW Transporter Parts">
+                    <h3>Transporter</h3>
+                </a>
+            </div>
+        </div>
+    </section>
 
-<div class="section">
-  <h2>Conclusion</h2>
-  <p>This website will be a showcase of digital craftsmanship—modern, functional, and highly adaptable. It not only tells your story but invites users to become part of your brand’s world. Designed to inspire, structured to convert.</p>
-</div>
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>VW Parts Specialists Since 2005</h2>
+                    <p>VWBreakers is an established Volkswagen breakers yard in Ipswich, Suffolk specializing in used Volkswagen car parts. We're fully authorized by the Environment Agency and maintain thousands of quality parts in stock.</p>
+                    <p>Our advanced vehicle registration software matches your vehicle to available parts, saving you time and ensuring compatibility. All parts are inspected, cleaned, and come with our standard 3-month warranty.</p>
+                    <div class="about-cta">
+                        <a href="/about-us/" class="btn btn-secondary">Learn More About Us</a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/logo1.png" alt="Our VW parts yard in Ipswich">
+                </div>
+            </div>
+        </div>
+    </section>
 
-<footer>
-  &copy; 2025 Proposal by Md. Mahim Hasan – Premium Web Experiences Crafted for Impact
-</footer>
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Sell Your Volkswagen for Top Prices</h2>
+                <p>We buy all Volkswagen models in any condition - running or not</p>
+                <a href="/sell-your-car/" class="btn btn-primary">Get a Free Valuation</a>
+            </div>
+        </div>
+    </section>
 
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <h3>Contact Us</h3>
+                        <address>
+                            <p><i class="fa-solid fa-location-dot"></i> Unit 6, Farthing Road Industrial Estate<br>
+                            Ipswich, Suffolk IP1 5AP</p>
+                            <p><i class="fa-solid fa-phone"></i> <a href="tel:01473487878">01473 487878</a></p>
+                            <p><i class="fa-solid fa-envelope"></i> <a href="mailto:info@vwbreakers.co.uk">info@vwbreakers.co.uk</a></p>
+                        </address>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3>Opening Hours</h3>
+                        <ul class="opening-hours">
+                            <li><span>Monday-Friday:</span> 8am - 5:30pm</li>
+                            <li><span>Saturday:</span> 8am - 1pm</li>
+                            <li><span>Sunday:</span> Appointment only</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="/parts/">Parts Store</a></li>
+                            <li><a href="/request-parts/">Request Parts</a></li>
+                            <li><a href="/sell-your-car/">Sell Your Car</a></li>
+                            <li><a href="/shipping/">Shipping Info</a></li>
+                            <li><a href="/returns/">Returns Policy</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3>Connect With Us</h3>
+                        <div class="social-links">
+                            <a href="https://facebook.com/VWBreakers" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/VWBreakers" target="_blank" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/vwbreakers/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.ebay.co.uk/str/vwbreakers" target="_blank" aria-label="eBay Store"><i class="fa-brands fa-ebay"></i></a>
+                        </div>
+                        
+                        <div class="payment-methods">
+                            <img style="background-color: #ffffff; padding: 5px; border-radius: 10px;" src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" width="50">
+                            <img style="background-color: #ffffff; padding: 5px; border-radius: 10px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/1200px-Mastercard-logo.svg.png" alt="Mastercard" width="40">
+                            <img style="background-color: #ffffff; padding: 5px; border-radius: 10px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/2560px-PayPal.svg.png" alt="PayPal" width="100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        &copy; 2025 VWBreakers Ltd. All rights reserved.
+                    </div>
+                    <div class="legal-links">
+                        <a href="/privacy/">Privacy Policy</a>
+                        <a href="/terms/">Terms & Conditions</a>
+                        <a href="/cookies/">Cookie Policy</a>
+                    </div>
+                </div>
+                <div class="disclaimer">
+                    <p>The trademarks "Volkswagen", "VW" and its logo are registered to Volkswagen Aktiengesellschaft in Germany and Volkswagen Group Limited. VWBreakers is completely independent and not affiliated with or authorized by the mentioned entities.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
 </body>
 </html>
