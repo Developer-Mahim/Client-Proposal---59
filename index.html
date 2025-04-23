@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interactive Website Proposal</title>
+  <style>
+    :root {
+      --primary-color: #0f172a;
+      --accent-color: #ffb703;
+      --background-color: #f9f9f9;
+      --text-color: #1e293b;
+      --highlight-color: #ffeccb;
+      --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--background-color);
+      color: var(--text-color);
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      background: var(--accent-color);
+      border-radius: 50%;
+      top: -40px;
+      right: -40px;
+      opacity: 0.1;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3.2rem;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    header p {
+      font-size: 1.25rem;
+      color: #cbd5e1;
+      margin-top: 1rem;
+      animation: fadeInUp 1.3s ease-out;
+    }
+
+    .section {
+      max-width: 1100px;
+      margin: 3rem auto;
+      padding: 3rem;
+      background: white;
+      border-radius: 20px;
+      box-shadow: var(--box-shadow);
+      transition: transform 0.3s ease;
+    }
+
+    .section:hover {
+      transform: translateY(-6px);
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      color: var(--primary-color);
+      border-left: 6px solid var(--accent-color);
+      padding-left: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    ul li {
+      margin-bottom: 0.75rem;
+    }
+
+    .highlight {
+      background: var(--highlight-color);
+      border-left: 6px solid var(--accent-color);
+      padding: 1.5rem;
+      margin-top: 1.5rem;
+      border-radius: 12px;
+      font-size: 1.05rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #e2e8f0;
+      font-size: 0.95rem;
+      color: #475569;
+      border-top: 1px solid #cbd5e1;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Interactive Website Proposal</h1>
+  <p>Immersive Digital Presence with Functional Innovation</p>
+</header>
+
+<div class="section">
+  <h2>Overview</h2>
+  <p>This proposal presents a plan to develop a high-end, visually striking informational website that includes a 3D interactive landing experience and a mini-site generation tool. Our approach blends visual creativity with technical precision to build a digital platform that both informs and impresses.</p>
+</div>
+
+<div class="section">
+  <h2>Key Features</h2>
+  <ul>
+    <li><strong>Immersive 3D Landing:</strong> A fully interactive 3D visual element designed to make a bold first impression and engage users immediately.</li>
+    <li><strong>Structured Content Delivery:</strong> Clean and effective layout to communicate your message with clarity and authority.</li>
+    <li><strong>Custom Mini-Site Templates:</strong> Empower users or internal teams to create sleek, lightweight micro-sites, aligned with your brand identity.</li>
+    <li><strong>Seamless User Experience:</strong> Optimized for all devices and screen sizes to ensure usability and accessibility.</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Strategic Benefits</h2>
+  <div class="highlight">
+    <strong>First-Class Engagement:</strong> The 3D element enhances interactivity and sets your site apart from traditional designs.
+  </div>
+  <div class="highlight">
+    <strong>Brand Extension:</strong> The mini-site builder fosters broader visibility and consistent brand representation across multiple applications.
+  </div>
+  <div class="highlight">
+    <strong>Built for the Future:</strong> Lightweight, scalable codebase with no unnecessary frameworks—ensuring long-term reliability and easy expansion.
+  </div>
+</div>
+
+<div class="section">
+  <h2>Conclusion</h2>
+  <p>This website will be a showcase of digital craftsmanship—modern, functional, and highly adaptable. It not only tells your story but invites users to become part of your brand’s world. Designed to inspire, structured to convert.</p>
+</div>
+
+<footer>
+  &copy; 2025 Proposal by Md. Mahim Hasan – Premium Web Experiences Crafted for Impact
+</footer>
+
+</body>
+</html>
